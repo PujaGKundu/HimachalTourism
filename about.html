@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="assets/stylesheet/style.css">
 </head>
 <body>
-    <header id="top" class="header container flex between-space item-center">
+    <header class="header container flex between-space item-center">
         <a href="index.html"><h3>Himachal Tourism</h3></a>            
         <label for="toggle" class="bars">                
             <i class="fas fa-bars" aria-hidden="true"></i>
@@ -35,9 +35,96 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="top" class="container">
+        <div>
+            <div class="slideshow-container">
 
-    </main>
+                <div class="mySlides fade">
+                  <img src="assets/media/About/a01.jpg" style="width:100%; height:35rem">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="assets/media/About/a02.jpg" style="width:100%; height:35rem">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="assets/media/About/a03.png" style="width:100%; height:35rem">
+                </div>
+    
+                <div class="mySlides fade">
+                  <img src="assets/media/About/a04.jpg" style="width:100%; height:35rem">
+                </div>
+                  
+                <div class="mySlides fade">
+                  <img src="assets/media/About/a05.jpg" style="width:100%; height:35rem">
+                </div>
+                  
+                <div class="mySlides fade">
+                  <img src="assets/media/About/a06.jpg" style="width:100%; height:35rem">
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+            </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                  <span class="dot" onclick="currentSlide(4)"></span> 
+                  <span class="dot" onclick="currentSlide(5)"></span> 
+                  <span class="dot" onclick="currentSlide(6)"></span> 
+                </div>
+                
+                <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+                </script>
+        </div>
+        <div class="flex between-space container about">
+            <section class="txtcenter flex-60">
+                <h1>About Us</h1>
+                <p>Himachal Pradesh ("Province of the Snowladen Mountains") is a state in the northern part of India. Situated in the Western Himalayas, it is one of the eleven mountain states and is characterized by an extreme landscape featuring several peaks and extensive river systems. Himachal Pradesh is the northernmost state of India and shares borders with the union territories of Jammu and Kashmir and Ladakh to the north, and the states of Punjab to the west, Haryana to the southwest, Uttarakhand to the southeast and a very narrow border with Uttar Pradesh to the South. The state also shares an international border to the east with the Tibet Autonomous Region in China. Himachal Pradesh is also known as 'Dev Bhoomi' or 'Land of Gods and Goddess' and 'Veer Bhoomi' which means 'Land of Braves'.</p>
+                <p>Himachal Pradesh is spread across valleys with many perennial rivers flowing through them. Around 90% of the state's population lives in rural areas. Agriculture, horticulture, hydropower and tourism are important constituents of the state's economy. The hilly state is almost universally electrified with 99.5% of the households having electricity as of 2016. The state was declared India's second open-defecation-free state in 2016. According to a survey of CMS – India Corruption Study 2017, Himachal Pradesh is India's least corrupt state.</p>
+            </section>
+            <aside class="flex-30">
+                <marquee behavior="" direction="down" width="100%" height="80%">
+                    <img src="assets/media/About/about01.jpg" alt="Image 1">
+                    <img src="assets/media/About/about02.jpg" alt="Image 2">
+                    <img src="assets/media/About/about03.jpg" alt="Image 3">
+                    <img src="assets/media/About/about04.jpg" alt="Image 4">
+                    <img src="assets/media/About/about05.jpg" alt="Image 5">
+                </marquee>
+            </aside>  
+        </div>
+          
+    </main>    
     <footer>
         <section class="head">
             <div class="container flex between-space item top wrap ">
