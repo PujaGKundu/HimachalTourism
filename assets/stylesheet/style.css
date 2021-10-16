@@ -293,7 +293,7 @@ a{
 
 .image-grid article {
 	width: 49%;
-	margin-bottom: 2rem;
+	margin-bottom: 4.8rem;
   }
 /* accomodation */
 .three-bars i{
@@ -306,7 +306,20 @@ a{
 	text-align: center;
 	padding: 2rem  0;
 }
-
+.about-info-destination{
+    background-color: #717171;
+    text-align: center;
+}
+.about-info-destination small{
+    font-size: 2rem;
+    font-weight: 600;
+    
+}
+.about-info-destination a{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+}
 
 /* about us */
 .about-us{
@@ -425,13 +438,6 @@ footer{
 .foot .top a:hover, .head nav a:hover, .head .btn a:hover{
     background-color: var(--secondary);
 }
-
-
-
-
-
-
-
 
 
 
