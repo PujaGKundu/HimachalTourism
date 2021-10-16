@@ -424,7 +424,6 @@ marquee img{
 /* Footer */
 footer {
   position: relative;
-  top: 5rem;
 }
 .head {
   background-color: var(--Dark);
@@ -494,6 +493,359 @@ footer {
 
 
 
+/*Generalized*/
+
+.container-contact{
+  max-width:1400px;
+  margin:0 auto;
+  padding:32px 0;
+}
+
+
+
+
+.section-padding{
+  padding: 70px 0;
+}
+
+.align-center{
+  text-align: center;
+}
+.flex{
+  display:flex;
+}
+
+.flex-column{
+  display:flex;
+  flex-direction: column;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+.justify-space-between{
+  justify-content: space-between;
+}
+
+.justify-content-center{
+  justify-content: center;
+}
+
+.justify-space-evenly{
+  justify-content:space-evenly;
+}
+
+.align-items-center{
+  align-items: center;
+}
+
+.align-items-start{
+  align-items: flex-start;
+}
+.justify-self-center{
+  justify-self: center;
+}
+
+
+.col-1-3{
+  flex:0 1 25%;
+  background-color: var(--white);
+  border-left:  5px solid var(--ocur);
+  border-bottom:  5px solid var(--ocur);
+  border-top: 5px solid var(--pink);
+  border-right: 5px solid var(--pink);
+  padding:30px;
+}
+
+.flex-70-contact{
+  flex:0 1 70%;
+  /* background-color: var(--grey); */
+}
+
+.flex-60-contact{
+  flex:0 1 60%;
+  /* background-color: var(--grey); */
+}
+
+.flex-30-contact{
+  flex:0 1 30%;
+  /* background-color: wheat; */
+}
+
+
+.font-size-zero{
+  font-size: 0;
+}
+
+
+
+.btn{
+  font-size:16px;
+  font-weight: 600;
+  padding:16px 44px;
+  text-align: center;
+  display:inline-block;
+}
+
+
+.btn-primary{
+  background-color: var(--pink);
+  border:none;
+  border-radius:6px;
+  text-transform: uppercase;
+}
+
+.btn-secondary{
+  border:2px solid var(--pink);
+  border-radius:6px;
+  text-transform: uppercase;
+  background-color: inherit;
+}
+
+.btn-primary a{
+  color:var(--white)
+}
+
+.btn-secondary a{
+  color:var(--pink)
+}
+
+.section-heading{
+  font-size: 54px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-shadow: 3px 3px 5px var(--grey);
+  margin-bottom: 30px;
+}
+
+
+
+
+/*CSS Vaiables*/
+
+:root{
+  --blue:#012D5B;                  /* Blue Color*/
+  --pink:#FD656B;                   /* Pink Color*/
+  --white:#FFFFFF;   
+  --light-blue:#F6F9FE;   
+  --grey:#627181;    
+  --red:#ff3300;       
+  --smoky-white:#F8F8F8;
+  --light-grey:#F0F0F0;
+  --black:black;
+  --dark-grey:#E0E0E0	;
+  --blue-shadow: #3366ff;
+  --ocur: #ffbf00;
+  --green: #00b386;
+}
+
+/*Hero*/
+
+.hero-contact{
+  height: 30vh;
+  background: url(../media/Contact/contact_hero.jpg);
+  text-align: center;
+  position: relative;
+}
+
+.gif{
+  position: absolute;
+  bottom:-50px;
+  right:50px;
+}
+
+.hero-contact .hero-title{
+  font-size: 64px;
+  color:var(--white);
+  text-transform: capitalize;
+  line-height: 30vh;
+}
+
+/*address*/
+.address-contact{
+  background-color: var(--white);
+  margin-top: 66px;
+}
+
+.map iframe{
+  width: 100%;
+  height:300px;
+  border-radius: 5px;
+}
+.addr{
+  color:var(--white);
+  background: url(../media/Contact/card.jpg) 50% 50%;
+  background-size: cover;
+  box-shadow: 7px 5px 8px 2px var(--blue);
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.col-1-2 .icon-addr{
+  flex:0 1 25%;
+  /* background-color: wheat;*/
+}
+
+.col-1-2 .text-addr{
+  flex:0 1 70%;
+  /* background-color:yellowgreen;*/
+}
+
+
+.icon-addr .pin-icon{
+  font-size: 100px;
+  color: var(--black);
+}
+
+.icon-addr .pin-icon:hover{
+  font-size: 120px;
+  color: var(--white);
+}
+
+.text-addr h3{
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.text-addr p{
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/*Support Section*/
+.support{
+  background-color: var(--smoky-white);
+}
+
+.support .col-1-3 h3{
+  font-size: 28px;
+  font-variant:small-caps;
+}
+
+
+
+/*Enquiry*/
+
+.enquiry-contact{
+  background:linear-gradient(to right,#2c3e50,#bdc3c7)
+}
+
+/*Form*/
+
+form{
+  background-color: var(--white);
+  padding:20px;
+  border-radius: 5px;
+  box-shadow: 7px 5px 8px 2px var(--grey);
+}
+
+input[name="name"],input[name="email"]{
+  width:48%;
+}
+input[name="subject"]{
+  width:98%;
+}
+
+input[type=text]
+{
+  padding:20px;
+  margin:2% 1%;
+  border:1px solid var(--grey);
+  border-radius: 5px;
+}
+textarea{
+  width: 98%;
+  margin: 1%;
+  border:1px solid var(--grey);
+  border-radius: 5px;
+}
+
+input:hover[type=text]{
+  border:1px solid var(--pink);
+}
+
+input[type=text]:hover::placeholder{
+  color: var(--pink);
+}
+
+
+textarea:hover{
+  border:1px solid var(--pink);
+}
+textarea:hover::placeholder{
+  color: var(--pink);
+}
+
+
+
+
+
+
+/*Button*/
+
+
+form .btn{
+  margin-left: 1%;
+  margin-top: 2%;
+}
+
+form .btn a{
+  color:var(--pink);
+}
+form .btn:hover{
+  margin-left: 1%;
+  margin-top: 2%;
+  color:var(--white);
+  background-color: var(--pink);
+}
+
+form .btn:hover a{
+  color: var(--white);
+}
+
+/*Description*/
+
+.visit{
+  background: linear-gradient(to bottom right, #e0d1d1
+  ,#a37575);
+  border-radius:5px;
+}
+
+.visit .description span{
+  font-variant: small-caps;
+  margin-right: 10px;
+}
+
+.visit .description p{
+  margin-bottom: 10px;
+}
+
+.box{
+  /* border:1px solid red; */
+  padding: 20px;
+}
+.icon{
+  /* border:1px solid green; */
+}
+
+.box .icon-visit {
+  font-size: 48px;
+}
+
+.mail-to{
+  color: black;
+}
+
+
+
+
+
+
+
+
+
 
 /* Responsive Design */
 @media screen and (min-width: 590px) and (max-width: 976px) {
@@ -516,7 +868,11 @@ footer {
   .flex-20,
   .flex-30,
   .flex-40,
-  .flex-60 {
+  .flex-60,
+  .col-1-3,
+  .flex-30-contact,
+  .flex-60-contact,
+  .flex-70-contact {
     flex: 1 1 40%;
     margin: 1rem 1.2rem;
   }
@@ -563,6 +919,9 @@ footer {
     width: 100%;
     height: auto;
   }
+  .gif{
+    display: none;
+  }
   .wrap {
     flex-wrap: wrap;
   }
@@ -575,7 +934,11 @@ footer {
   .flex-20,
   .flex-30,
   .flex-40,
-  .flex-60 {
+  .flex-60,
+  .col-1-3,
+  .flex-30-contact,
+  .flex-60-contact,
+  .flex-70-contact {
     flex: 1 1 100%;
     margin: 1rem 1.2rem;
   }
@@ -614,4 +977,141 @@ footer {
     font-size: 2rem;
     z-index: 100;
   }
+}
+
+
+
+
+.container-2 {
+  max-width: 1230px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.nav-menu li {
+  margin-left: 1.4rem;
+  font-weight: 700;
+}
+.nav-menu li a{
+  color: #000000;
+text-transform: uppercase;
+}
+
+.sub-menu-box{
+  position: relative;
+}
+.sub-menu{
+  position: absolute;
+  left: 0;
+  top: 3.2rem;
+  padding: 1rem 0.3rem;
+  width: 25rem;   
+  display: none;
+  transform: translateX(-60%);
+color: #ffff;
+background-color: rgb(201, 201, 201);
+} 
+
+.sub-menu-box .sub-menu li {
+  padding-bottom: 1rem;
+} 
+.sub-menu-box:hover .sub-menu {
+  display: inline-block;	
+} 
+/* main  */
+.three-bars{
+  text-align: center;
+}
+
+/* destination */
+.image-container {
+width: 100%;
+height: 100%;
+}
+.image-container > .width-full {
+height: 100%;
+}
+
+.image-grid article {
+width: 49%;
+margin-bottom: 4.8rem;
+}
+/* accomodation */
+.three-bars i{
+font-size: 3rem;
+color: cadetblue; 
+padding: 6rem 0 2rem 0 ;
+}
+.about-header{
+font-size: 3rem;
+text-align: center;
+padding: 2rem  0;
+}
+.about-info-destination{
+  background-color: #717171;
+  text-align: center;
+}
+.about-info-destination small{
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+}
+.about-info-destination a{
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+}
+.about-info-destination:hover a{
+  color: red;
+}
+
+/* about us */
+.about-us{
+background-color: rgb(32, 38, 92);
+}
+.about-us-article {
+padding: 6rem 4rem 0 3rem ;
+}
+.about-us-article h2{
+  font-size: 3rem ;
+color: #fff;
+}
+.about-us-article p{
+font-size: 1.3rem ;
+color: #fff;
+}
+.about-us-article hr{
+ width: 30rem;
+ text-align: left;
+ font-size: 6rem ;
+ margin:1rem 0;
+}
+
+/* top-destination */
+.destination-area figure img{
+height: 100px;
+width: 100px;
+object-fit: cover;
+border-radius: 50%;
+}
+.about-main-destination p {
+ font-size: 1.5rem;
+ font-weight: 500;
+}
+.destination-area figure small, a{
+align-items: center;
+}
+.about-destintion-area {
+text-align: center;
+}
+.about-destintion-area small{
+font-size: 1.5rem ;
+font-weight: 600;
+}
+.about-destintion-area a{
+font-weight: 500;
+color: black;
+}
+.about-destintion-area a:hover{
+color: red;
 }
