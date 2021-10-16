@@ -64,6 +64,7 @@ table {
 *::before,
 *::after {
 	box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 
@@ -313,12 +314,15 @@ a{
 .about-info-destination small{
     font-size: 2rem;
     font-weight: 600;
-    
+    color: #fff;
 }
 .about-info-destination a{
     font-size: 1rem;
     font-weight: 500;
     color: #fff;
+}
+.about-info-destination:hover a{
+    color: red;
 }
 
 /* about us */
